@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Organify Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8fff9;
+        color: #2d3a27;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(rgba(0, 50, 0, 0.4), rgba(0, 50, 0, 0.4)),
+          url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80")
+            center/cover;
+        color: white;
+        text-align: center;
+        padding: 130px 20px;
+      }
+
+      .hero h1 {
+        font-weight: 700;
+        font-size: 3rem;
+      }
+
+      .blog-card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .blog-card img {
+        height: 230px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .blog-body {
+        padding: 20px;
+      }
+
+      .blog-body h5 {
+        font-weight: 600;
+        color: #2d3a27;
+      }
+
+      .blog-meta {
+        font-size: 0.85rem;
+        color: #777;
+      }
+
+      .read-more {
+        text-decoration: none;
+        color: #28a745;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .read-more:hover {
+        color: #1d6b32;
+      }
+
+      footer {
+        background-color: #e6f5ea;
+        color: #2d3a27;
+        padding: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="index.html"
+          >Organify</a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Our Blog</h1>
+        <p class="lead mt-3">
+          Fresh thoughts, healthy living, and farm stories.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="blog-card">
+              <img src="/i/eat.webp" alt="Blog 1" />
+              <div class="blog-body">
+                <h5>5 Benefits of Eating Organic Food</h5>
+                <div class="blog-meta mb-2">
+                  <i class="bi bi-calendar"></i> Oct 10, 2025 &nbsp; | &nbsp;
+                  <i class="bi bi-person"></i> Admin
+                </div>
+                <p>
+                  Organic food isn’t just a trend — it’s a lifestyle. Discover
+                  how choosing organic can boost your health and the planet.
+                </p>
+                <a href="#" class="read-more"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog-card">
+              <img src="/i/sus.webp" alt="Blog 2" />
+              <div class="blog-body">
+                <h5>How Sustainable Farming Helps the Planet</h5>
+                <div class="blog-meta mb-2">
+                  <i class="bi bi-calendar"></i> Sep 22, 2025 &nbsp; | &nbsp;
+                  <i class="bi bi-person"></i> Team Organify
+                </div>
+                <p>
+                  Explore how sustainable agriculture preserves biodiversity,
+                  reduces pollution, and secures food for future generations.
+                </p>
+                <a href="#" class="read-more"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog-card">
+              <img src="/i/fr.webp" alt="Blog 3" />
+              <div class="blog-body">
+                <h5>Farm-to-Table: How We Keep It Fresh</h5>
+                <div class="blog-meta mb-2">
+                  <i class="bi bi-calendar"></i> Aug 30, 2025 &nbsp; | &nbsp;
+                  <i class="bi bi-person"></i> Meera Patel
+                </div>
+                <p>
+                  At Organify, freshness is our promise. Learn how our process
+                  ensures every item you receive is at peak quality.
+                </p>
+                <a href="#" class="read-more"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog-card">
+              <img src="/i/was.webp" alt="Blog 4" />
+              <div class="blog-body">
+                <h5>10 Ways to Reduce Food Waste at Home</h5>
+                <div class="blog-meta mb-2">
+                  <i class="bi bi-calendar"></i> Aug 5, 2025 &nbsp; | &nbsp;
+                  <i class="bi bi-person"></i> Ravi Sharma
+                </div>
+                <p>
+                  Food waste is a global issue — but you can help! Here are
+                  practical tips to make your kitchen more sustainable.
+                </p>
+                <a href="#" class="read-more"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog-card">
+              <img src="/i/fer.webp" alt="Blog 5" />
+              <div class="blog-body">
+                <h5>The Secret Behind Organic Fertilizers</h5>
+                <div class="blog-meta mb-2">
+                  <i class="bi bi-calendar"></i> Jul 15, 2025 &nbsp; | &nbsp;
+                  <i class="bi bi-person"></i> Admin
+                </div>
+                <p>
+                  Learn how organic fertilizers enrich soil naturally and create
+                  healthier, more resilient crops without chemicals.
+                </p>
+                <a href="#" class="read-more"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog-card">
+              <img src="/i/ar.webp" alt="Blog 6" />
+              <div class="blog-body">
+                <h5>How to Start Your Own Organic Garden</h5>
+                <div class="blog-meta mb-2">
+                  <i class="bi bi-calendar"></i> Jun 20, 2025 &nbsp; | &nbsp;
+                  <i class="bi bi-person"></i> Guest Author
+                </div>
+                <p>
+                  Dreaming of growing your own veggies? Here’s a beginner’s
+                  guide to starting your backyard organic garden.
+                </p>
+                <a href="#" class="read-more"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container text-center">
+        <p class="mb-1 fw-semibold">Organify © 2025. All Rights Reserved.</p>
+        <p class="small text-muted">
+          Sustainably grown • Locally sourced • Farm fresh
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
